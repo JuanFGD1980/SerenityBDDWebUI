@@ -88,7 +88,7 @@ public class AutomationPracticeContactUsStepDefinition extends Setup {
     }
 
     @When("el cliente realizara el proceso para el contacto con la compañía con Customer service")
-    public void elClienteRealizaraElProcesoParaElContactoConLaCompañíaConCustomerService() {
+    public void elClienteRealizaraElProcesoParaElContactoConLaCompaniaConCustomerService() {
         try {
             generateCliente2();
             theActorInTheSpotlight().attemptsTo(
@@ -106,7 +106,7 @@ public class AutomationPracticeContactUsStepDefinition extends Setup {
     }
 
     @Then("el cliente  deberá observar el mensaje de  confirmación del envío del mensaje al Customer service")
-    public void elClienteDeberáObservarElMensajeDeConfirmaciónDelEnvíoDelMensajeAlCustomerService() {
+    public void elClienteDeberaObservarElMensajeDeConfirmacionDelEnvioDelMensajeAlCustomerService() {
         try {
             theActorInTheSpotlight().should(
                     seeThat(
